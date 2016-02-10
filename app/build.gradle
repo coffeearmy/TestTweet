@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.coffeearmy.testtweet"
+        minSdkVersion 21
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    final RETROFIT_VERSION = '2.0.0-beta3'
+    final DAGGER_VERSION = '2.0.2'
+    def daggerCompiler = "com.google.dagger:dagger-compiler:$DAGGER_VERSION"
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    //Google
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    //Retrofit
+    compile "com.squareup.retrofit2:retrofit:$RETROFIT_VERSION"
+    compile "com.squareup.retrofit2:converter-gson:$RETROFIT_VERSION"
+    compile "com.squareup.retrofit2:adapter-rxjava:$RETROFIT_VERSION"
+    //Reactive extensions
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'io.reactivex:rxjava:1.1.0'
+    //DI
+    compile  "com.google.dagger:dagger:$DAGGER_VERSION"
+    provided 'org.glassfish:javax.annotation:10.0-b28' //Required by Dagger2
+    compile 'com.jakewharton:butterknife:7.0.1'
+    apt daggerCompiler
+
+}
