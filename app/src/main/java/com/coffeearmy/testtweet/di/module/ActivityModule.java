@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 
 import com.coffeearmy.testtweet.di.ActivityContext;
+import com.coffeearmy.testtweet.ui.activiy.TweetPresenterImpl;
+import com.coffeearmy.testtweet.ui.base.TweetPresenter;
 
 import dagger.Module;
 import dagger.Provides;
@@ -26,6 +28,11 @@ public class ActivityModule {
     @ActivityContext
     Context providesContext(){
         return activity;
+    }
+
+    @Provides
+    TweetPresenter getPresenter(TweetPresenterImpl tweetPresenter) {
+        return tweetPresenter;
     }
 
 }
