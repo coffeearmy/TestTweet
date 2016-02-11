@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by elisadegregorio on 09/02/16.
  */
-public class Tweet {
+public class TweetRemote {
     private List<Status> statuses = new ArrayList<Status>();
     private SearchMetadata searchMetadata;
 

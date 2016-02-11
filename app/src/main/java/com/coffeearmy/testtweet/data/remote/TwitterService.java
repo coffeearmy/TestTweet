@@ -2,7 +2,7 @@ package com.coffeearmy.testtweet.data.remote;
 
 
 import com.coffeearmy.testtweet.data.remote.model.AuthResponse;
-import com.coffeearmy.testtweet.data.remote.model.Tweet;
+import com.coffeearmy.testtweet.data.remote.model.TweetRemote;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -28,7 +28,7 @@ public interface TwitterService {
                                       @Body RequestBody grantType);
 
     @GET("/1.1/search/tweets.json")
-    Observable<Tweet> search(@Query("q") String searchQuery,
+    Observable<TweetRemote> search(@Query("q") String searchQuery,
                              @Header("Authorization") String authorization,
                              @Header("Content-Type") String contentType);
 
