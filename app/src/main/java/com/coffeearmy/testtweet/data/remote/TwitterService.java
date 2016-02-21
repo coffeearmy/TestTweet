@@ -23,7 +23,6 @@ public interface TwitterService {
 
     @POST("/oauth2/token")
     Observable<AuthResponse> authUser(@Header("Authorization") String authorization,
-                                      @Header("Content-Length") String bodyLength,
                                       @Header("Content-Type") String contentType,
                                       @Body RequestBody grantType);
 

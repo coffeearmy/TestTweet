@@ -26,9 +26,10 @@ public class TweetRemoteDataMapper {
             tweet= new Tweet();
             tweet.setMessage(tweetRemote.getText());
             tweet.setName(tweetRemote.getUser().getName());
-            tweet.setNick(tweetRemote.getUser().getScreenName());
-            tweet.setPathPhoto(tweetRemote.getUser().getProfileImageUrl());
-            tweet.setNumRetweets(tweetRemote.getRetweetCount());
+            tweet.setNick(tweetRemote.getUser().getScreenName()==null ? "" : tweetRemote.getUser().getScreenName());
+            tweet.setPathPhoto(tweetRemote.getUser().getProfileImageUrl()==null ? "" : tweetRemote.getUser().getProfileImageUrl());
+            tweet.setNumRetweets(tweetRemote.getRetweetCount()==null? 0 : tweetRemote.getRetweetCount());
+            tweet.setDate(tweetRemote.getCreatedAt());
         }
         return tweet;
     }

@@ -7,16 +7,16 @@ public class Status {
     private Object coordinates;
     private Boolean favorited;
     private Boolean truncated;
-    private String createdAt;
+    private String created_at;
     private String idStr;
-    private Entities entities;
+   // private Entities entities;
     private Object inReplyToUserIdStr;
     private Object contributors;
     private String text;
-    private Metadata metadata;
+//    private Metadata metadata;
     private Integer retweetCount;
     private Object inReplyToStatusIdStr;
-    private Integer id;
+    private String id;
     private Object geo;
     private Boolean retweeted;
     private Object inReplyToUserId;
@@ -72,14 +72,14 @@ public class Status {
      * @return The createdAt
      */
     public String getCreatedAt() {
-        return createdAt;
+        return created_at;
     }
 
     /**
      * @param createdAt The created_at
      */
     public void setCreatedAt(String createdAt) {
-        this.createdAt = createdAt;
+        this.created_at = createdAt;
     }
 
     /**
@@ -96,20 +96,7 @@ public class Status {
         this.idStr = idStr;
     }
 
-    /**
-     * @return The entities
-     */
-    public Entities getEntities() {
-        return entities;
-    }
-
-    /**
-     * @param entities The entities
-     */
-    public void setEntities(Entities entities) {
-        this.entities = entities;
-    }
-
+//
     /**
      * @return The inReplyToUserIdStr
      */
@@ -152,19 +139,19 @@ public class Status {
         this.text = text;
     }
 
-    /**
-     * @return The metadata
-     */
-    public Metadata getMetadata() {
-        return metadata;
-    }
-
-    /**
-     * @param metadata The metadata
-     */
-    public void setMetadata(Metadata metadata) {
-        this.metadata = metadata;
-    }
+//    /**
+//     * @return The metadata
+//     */
+//    public Metadata getMetadata() {
+//        return metadata;
+//    }
+//
+//    /**
+//     * @param metadata The metadata
+//     */
+//    public void setMetadata(Metadata metadata) {
+//        this.metadata = metadata;
+//    }
 
     /**
      * @return The retweetCount
@@ -197,14 +184,14 @@ public class Status {
     /**
      * @return The id
      */
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
     /**
      * @param id The id
      */
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 
 import com.coffeearmy.testtweet.di.ActivityContext;
+import com.coffeearmy.testtweet.domain.usecase.GetMatchHourTweets;
 import com.coffeearmy.testtweet.ui.activiy.TweetPresenterImpl;
 import com.coffeearmy.testtweet.ui.base.TweetPresenter;
 
@@ -34,5 +35,7 @@ public class ActivityModule {
     TweetPresenter getPresenter(TweetPresenterImpl tweetPresenter) {
         return tweetPresenter;
     }
+
+
 
 }

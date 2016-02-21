@@ -5,30 +5,28 @@ package com.coffeearmy.testtweet.data.remote.model;
  */
 public class User {
 
-    private String profileSidebarFillColor;
-    private String profileSidebarBorderColor;
-    private Boolean profileBackgroundTile;
+
     private String name;
-    private String profileImageUrl;
+    private String profile_image_url;
     private String createdAt;
     private String location;
     private Object followRequestSent;
     private String profileLinkColor;
     private Boolean isTranslator;
     private String idStr;
-    private Entities_ entities;
+//    private Entities_ entities;
     private Boolean defaultProfile;
     private Boolean contributorsEnabled;
-    private Integer favouritesCount;
+    private String favouritesCount;
     private String url;
     private String profileImageUrlHttps;
-    private Integer utcOffset;
-    private Integer id;
+    private String utcOffset;
+    private String id;
     private Boolean profileUseBackgroundImage;
-    private Integer listedCount;
+    private String listedCount;
     private String profileTextColor;
     private String lang;
-    private Integer followersCount;
+    private String followersCount;
     private Boolean _protected;
     private Object notifications;
     private String profileBackgroundImageUrlHttps;
@@ -39,53 +37,14 @@ public class User {
     private String description;
     private Boolean defaultProfileImage;
     private String profileBackgroundImageUrl;
-    private Integer statusesCount;
-    private Integer friendsCount;
+    private String statusesCount;
+    private String friendsCount;
     private Object following;
     private Boolean showAllInlineMedia;
-    private String screenName;
+    private String screen_name;
 
-    /**
-     * @return The profileSidebarFillColor
-     */
-    public String getProfileSidebarFillColor() {
-        return profileSidebarFillColor;
-    }
 
-    /**
-     * @param profileSidebarFillColor The profile_sidebar_fill_color
-     */
-    public void setProfileSidebarFillColor(String profileSidebarFillColor) {
-        this.profileSidebarFillColor = profileSidebarFillColor;
-    }
 
-    /**
-     * @return The profileSidebarBorderColor
-     */
-    public String getProfileSidebarBorderColor() {
-        return profileSidebarBorderColor;
-    }
-
-    /**
-     * @param profileSidebarBorderColor The profile_sidebar_border_color
-     */
-    public void setProfileSidebarBorderColor(String profileSidebarBorderColor) {
-        this.profileSidebarBorderColor = profileSidebarBorderColor;
-    }
-
-    /**
-     * @return The profileBackgroundTile
-     */
-    public Boolean getProfileBackgroundTile() {
-        return profileBackgroundTile;
-    }
-
-    /**
-     * @param profileBackgroundTile The profile_background_tile
-     */
-    public void setProfileBackgroundTile(Boolean profileBackgroundTile) {
-        this.profileBackgroundTile = profileBackgroundTile;
-    }
 
     /**
      * @return The name
@@ -105,14 +64,14 @@ public class User {
      * @return The profileImageUrl
      */
     public String getProfileImageUrl() {
-        return profileImageUrl;
+        return profile_image_url;
     }
 
     /**
      * @param profileImageUrl The profile_image_url
      */
     public void setProfileImageUrl(String profileImageUrl) {
-        this.profileImageUrl = profileImageUrl;
+        this.profile_image_url = profileImageUrl;
     }
 
     /**
@@ -199,19 +158,19 @@ public class User {
         this.idStr = idStr;
     }
 
-    /**
-     * @return The entities
-     */
-    public Entities_ getEntities() {
-        return entities;
-    }
-
-    /**
-     * @param entities The entities
-     */
-    public void setEntities(Entities_ entities) {
-        this.entities = entities;
-    }
+//    /**
+//     * @return The entities
+//     */
+//    public Entities_ getEntities() {
+//        return entities;
+//    }
+//
+//    /**
+//     * @param entities The entities
+//     */
+//    public void setEntities(Entities_ entities) {
+//        this.entities = entities;
+//    }
 
     /**
      * @return The defaultProfile
@@ -244,14 +203,14 @@ public class User {
     /**
      * @return The favouritesCount
      */
-    public Integer getFavouritesCount() {
+    public String getFavouritesCount() {
         return favouritesCount;
     }
 
     /**
      * @param favouritesCount The favourites_count
      */
-    public void setFavouritesCount(Integer favouritesCount) {
+    public void setFavouritesCount(String favouritesCount) {
         this.favouritesCount = favouritesCount;
     }
 
@@ -286,28 +245,28 @@ public class User {
     /**
      * @return The utcOffset
      */
-    public Integer getUtcOffset() {
+    public String getUtcOffset() {
         return utcOffset;
     }
 
     /**
      * @param utcOffset The utc_offset
      */
-    public void setUtcOffset(Integer utcOffset) {
+    public void setUtcOffset(String utcOffset) {
         this.utcOffset = utcOffset;
     }
 
     /**
      * @return The id
      */
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
     /**
      * @param id The id
      */
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -328,14 +287,14 @@ public class User {
     /**
      * @return The listedCount
      */
-    public Integer getListedCount() {
+    public String getListedCount() {
         return listedCount;
     }
 
     /**
      * @param listedCount The listed_count
      */
-    public void setListedCount(Integer listedCount) {
+    public void setListedCount(String listedCount) {
         this.listedCount = listedCount;
     }
 
@@ -370,14 +329,14 @@ public class User {
     /**
      * @return The followersCount
      */
-    public Integer getFollowersCount() {
+    public String getFollowersCount() {
         return followersCount;
     }
 
     /**
      * @param followersCount The followers_count
      */
-    public void setFollowersCount(Integer followersCount) {
+    public void setFollowersCount(String followersCount) {
         this.followersCount = followersCount;
     }
 
@@ -524,28 +483,28 @@ public class User {
     /**
      * @return The statusesCount
      */
-    public Integer getStatusesCount() {
+    public String getStatusesCount() {
         return statusesCount;
     }
 
     /**
      * @param statusesCount The statuses_count
      */
-    public void setStatusesCount(Integer statusesCount) {
+    public void setStatusesCount(String statusesCount) {
         this.statusesCount = statusesCount;
     }
 
     /**
      * @return The friendsCount
      */
-    public Integer getFriendsCount() {
+    public String getFriendsCount() {
         return friendsCount;
     }
 
     /**
      * @param friendsCount The friends_count
      */
-    public void setFriendsCount(Integer friendsCount) {
+    public void setFriendsCount(String friendsCount) {
         this.friendsCount = friendsCount;
     }
 
@@ -581,14 +540,14 @@ public class User {
      * @return The screenName
      */
     public String getScreenName() {
-        return screenName;
+        return screen_name;
     }
 
     /**
      * @param screenName The screen_name
      */
     public void setScreenName(String screenName) {
-        this.screenName = screenName;
+        this.screen_name = screenName;
     }
 
 }

@@ -9,7 +9,7 @@ import com.coffeearmy.testtweet.domain.model.Tweet;
 public interface TweetPresenter {
     void onAttachView(View v);
     void onDetachView();
-
+    void initRX();
     interface View {
         void renderTweet(Tweet tweet);
         void renderError();

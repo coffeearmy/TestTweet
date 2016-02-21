@@ -8,7 +8,7 @@ import java.util.List;
  */
 public class TweetRemote {
     private List<Status> statuses = new ArrayList<Status>();
-    private SearchMetadata searchMetadata;
+//    private SearchMetadata searchMetadata;
 
     /**
      * @return The statuses
@@ -24,17 +24,17 @@ public class TweetRemote {
         this.statuses = statuses;
     }
 
-    /**
-     * @return The searchMetadata
-     */
-    public SearchMetadata getSearchMetadata() {
-        return searchMetadata;
-    }
-
-    /**
-     * @param searchMetadata The search_metadata
-     */
-    public void setSearchMetadata(SearchMetadata searchMetadata) {
-        this.searchMetadata = searchMetadata;
-    }
+//    /**
+//     * @return The searchMetadata
+//     */
+//    public SearchMetadata getSearchMetadata() {
+//        return searchMetadata;
+//    }
+//
+//    /**
+//     * @param searchMetadata The search_metadata
+//     */
+//    public void setSearchMetadata(SearchMetadata searchMetadata) {
+//        this.searchMetadata = searchMetadata;
+//    }
 }
